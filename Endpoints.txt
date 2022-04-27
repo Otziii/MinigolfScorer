@@ -1,3 +1,5 @@
+BASEURL: https://us-central1-smalltalk-3bfb8.cloudfunctions.net/minigolf
+
 --------------------------------------
 
 ENDPOINT: GET - /getGameScores?gameId=STRING
@@ -28,7 +30,25 @@ RESPONSE:
     {
         "gameId": String,
         "gameName": String,
-        "created": Long
+        "created": Long,
+        "isActive": Boolean
+    }
+]
+400 - Client error
+500 - Server error
+
+--------------------------------------
+
+ENDPOINT: GET - /getAllActiveGames
+
+RESPONSE:
+200 - OK
+[
+    {
+        "gameId": String,
+        "gameName": String,
+        "created": Long,
+        "isActive": Boolean
     }
 ]
 400 - Client error
@@ -47,6 +67,10 @@ REQUEST:
 
 RESPONSE:
 200 - OK
+{
+    message: String,
+    gameId: String
+}
 400 - Client error
 500 - Server error
 
@@ -65,6 +89,27 @@ REQUEST:
 
 RESPONSE:
 200 - OK
+{
+    message: String
+}
+400 - Client error
+500 - Server error
+
+--------------------------------------
+
+ENDPOINT: POST - /endGame
+
+REQUEST:
+{
+    "gameId": String
+}
+
+
+RESPONSE:
+200 - OK
+{
+    message: String
+}
 400 - Client error
 500 - Server error
 
