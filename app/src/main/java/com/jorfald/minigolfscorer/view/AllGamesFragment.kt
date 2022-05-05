@@ -8,8 +8,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.android.volley.Request
+import com.android.volley.toolbox.JsonObjectRequest
 import com.jorfald.minigolfscorer.viewModel.GamesViewModel
 import com.jorfald.minigolfscorer.R
+import org.json.JSONArray
+import org.json.JSONObject
 
 class AllGamesFragment : Fragment() {
 
@@ -34,6 +38,7 @@ class AllGamesFragment : Fragment() {
         // TODO: Initiate views
 
         // TODO: viewModel.getAllGames() and fill recyclerView
+        print("")
     }
 
     fun bindObservers() {

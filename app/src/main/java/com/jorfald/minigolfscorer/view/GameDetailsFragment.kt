@@ -45,6 +45,54 @@ class GameDetailsFragment : Fragment() {
                 Player(
                     "Per",
                     listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
+                ),
+                Player(
+                    "Per",
+                    listOf()
                 )
             )
         ) { _, _, _ ->
